@@ -14,7 +14,7 @@ jobs:
       with:
         dotnet-version: 3.1.302
     - name: Publish with dotnet
-      run: dotnet publish --configuration Release --output publish
+      run: dotnet publish src --configuration Release --output publish
     - name: Deploy to Github Pages
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
